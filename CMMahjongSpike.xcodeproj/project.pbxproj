@@ -8,6 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		1D734B881F7466BA004A58B8 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1D734B871F7466BA004A58B8 /* main.cpp */; };
+		1DB67C741F7467510046F9DE /* CMAchievement.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1DB67C4E1F74674D0046F9DE /* CMAchievement.cpp */; };
+		1DB67C751F7467510046F9DE /* CMColour.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1DB67C501F74674D0046F9DE /* CMColour.cpp */; };
+		1DB67C761F7467510046F9DE /* CMPlayerMode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1DB67C511F74674D0046F9DE /* CMPlayerMode.cpp */; };
+		1DB67C771F7467510046F9DE /* CMTileState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1DB67C551F74674D0046F9DE /* CMTileState.cpp */; };
+		1DB67C781F7467510046F9DE /* CMPlayerState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1DB67C591F74674D0046F9DE /* CMPlayerState.cpp */; };
+		1DB67C791F7467510046F9DE /* CMRuleBook.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1DB67C5B1F74674D0046F9DE /* CMRuleBook.cpp */; };
+		1DB67C7A1F7467510046F9DE /* CMWall.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1DB67C5D1F74674E0046F9DE /* CMWall.cpp */; };
+		1DB67C7B1F7467510046F9DE /* CMMatch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1DB67C5F1F74674E0046F9DE /* CMMatch.cpp */; };
+		1DB67C7C1F7467510046F9DE /* CMCommand.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1DB67C601F74674E0046F9DE /* CMCommand.cpp */; };
+		1DB67C7D1F7467510046F9DE /* CMHandState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1DB67C621F74674E0046F9DE /* CMHandState.cpp */; };
+		1DB67C7E1F7467510046F9DE /* CMHandScore.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1DB67C671F74674F0046F9DE /* CMHandScore.cpp */; };
+		1DB67C7F1F7467510046F9DE /* CMTile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1DB67C691F74674F0046F9DE /* CMTile.cpp */; };
+		1DB67C801F7467510046F9DE /* CMAction.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1DB67C6A1F74674F0046F9DE /* CMAction.cpp */; };
+		1DB67C811F7467510046F9DE /* CMHand.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1DB67C6D1F7467500046F9DE /* CMHand.cpp */; };
+		1DB67C821F7467510046F9DE /* CMMeld.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1DB67C701F7467500046F9DE /* CMMeld.cpp */; };
+		1DB67C831F7467510046F9DE /* CMPlayerAction.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1DB67C711F7467500046F9DE /* CMPlayerAction.cpp */; };
+		1DB67C841F7467510046F9DE /* CMPlayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1DB67C721F7467510046F9DE /* CMPlayer.cpp */; };
+		1DB67C871F74678F0046F9DE /* CMHandActions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1DB67C851F74678E0046F9DE /* CMHandActions.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +43,46 @@
 /* Begin PBXFileReference section */
 		1D734B841F7466BA004A58B8 /* CMMahjongSpike */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CMMahjongSpike; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D734B871F7466BA004A58B8 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		1DB67C4E1F74674D0046F9DE /* CMAchievement.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CMAchievement.cpp; sourceTree = "<group>"; };
+		1DB67C4F1F74674D0046F9DE /* CMHandState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMHandState.h; sourceTree = "<group>"; };
+		1DB67C501F74674D0046F9DE /* CMColour.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CMColour.cpp; sourceTree = "<group>"; };
+		1DB67C511F74674D0046F9DE /* CMPlayerMode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CMPlayerMode.cpp; sourceTree = "<group>"; };
+		1DB67C521F74674D0046F9DE /* CMWall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMWall.h; sourceTree = "<group>"; };
+		1DB67C531F74674D0046F9DE /* CMTileState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMTileState.h; sourceTree = "<group>"; };
+		1DB67C541F74674D0046F9DE /* CMCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMCommand.h; sourceTree = "<group>"; };
+		1DB67C551F74674D0046F9DE /* CMTileState.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CMTileState.cpp; sourceTree = "<group>"; };
+		1DB67C561F74674D0046F9DE /* CMHand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMHand.h; sourceTree = "<group>"; };
+		1DB67C571F74674D0046F9DE /* CMTileConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMTileConst.h; sourceTree = "<group>"; };
+		1DB67C581F74674D0046F9DE /* CMHandScore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMHandScore.h; sourceTree = "<group>"; };
+		1DB67C591F74674D0046F9DE /* CMPlayerState.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CMPlayerState.cpp; sourceTree = "<group>"; };
+		1DB67C5A1F74674D0046F9DE /* CMPlayerMode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMPlayerMode.h; sourceTree = "<group>"; };
+		1DB67C5B1F74674D0046F9DE /* CMRuleBook.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CMRuleBook.cpp; sourceTree = "<group>"; };
+		1DB67C5C1F74674E0046F9DE /* CMMeld.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMMeld.h; sourceTree = "<group>"; };
+		1DB67C5D1F74674E0046F9DE /* CMWall.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CMWall.cpp; sourceTree = "<group>"; };
+		1DB67C5E1F74674E0046F9DE /* CMRuleBook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMRuleBook.h; sourceTree = "<group>"; };
+		1DB67C5F1F74674E0046F9DE /* CMMatch.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CMMatch.cpp; sourceTree = "<group>"; };
+		1DB67C601F74674E0046F9DE /* CMCommand.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CMCommand.cpp; sourceTree = "<group>"; };
+		1DB67C611F74674E0046F9DE /* CMGlobalEnums.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMGlobalEnums.h; sourceTree = "<group>"; };
+		1DB67C621F74674E0046F9DE /* CMHandState.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CMHandState.cpp; sourceTree = "<group>"; };
+		1DB67C631F74674E0046F9DE /* CMMatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMMatch.h; sourceTree = "<group>"; };
+		1DB67C641F74674E0046F9DE /* CMPlayerState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMPlayerState.h; sourceTree = "<group>"; };
+		1DB67C651F74674E0046F9DE /* CMAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMAction.h; sourceTree = "<group>"; };
+		1DB67C661F74674E0046F9DE /* CMDispatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMDispatcher.h; sourceTree = "<group>"; };
+		1DB67C671F74674F0046F9DE /* CMHandScore.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CMHandScore.cpp; sourceTree = "<group>"; };
+		1DB67C681F74674F0046F9DE /* CMCue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMCue.h; sourceTree = "<group>"; };
+		1DB67C691F74674F0046F9DE /* CMTile.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CMTile.cpp; sourceTree = "<group>"; };
+		1DB67C6A1F74674F0046F9DE /* CMAction.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CMAction.cpp; sourceTree = "<group>"; };
+		1DB67C6B1F74674F0046F9DE /* CMColour.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMColour.h; sourceTree = "<group>"; };
+		1DB67C6C1F74674F0046F9DE /* CMPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMPlayer.h; sourceTree = "<group>"; };
+		1DB67C6D1F7467500046F9DE /* CMHand.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CMHand.cpp; sourceTree = "<group>"; };
+		1DB67C6E1F7467500046F9DE /* CMTile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMTile.h; sourceTree = "<group>"; };
+		1DB67C6F1F7467500046F9DE /* CMAchievement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMAchievement.h; sourceTree = "<group>"; };
+		1DB67C701F7467500046F9DE /* CMMeld.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CMMeld.cpp; sourceTree = "<group>"; };
+		1DB67C711F7467500046F9DE /* CMPlayerAction.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CMPlayerAction.cpp; sourceTree = "<group>"; };
+		1DB67C721F7467510046F9DE /* CMPlayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CMPlayer.cpp; sourceTree = "<group>"; };
+		1DB67C731F7467510046F9DE /* CMPlayerAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMPlayerAction.h; sourceTree = "<group>"; };
+		1DB67C851F74678E0046F9DE /* CMHandActions.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CMHandActions.cpp; sourceTree = "<group>"; };
+		1DB67C861F74678F0046F9DE /* CMHandActions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMHandActions.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +115,46 @@
 		1D734B861F7466BA004A58B8 /* CMMahjongSpike */ = {
 			isa = PBXGroup;
 			children = (
+				1DB67C851F74678E0046F9DE /* CMHandActions.cpp */,
+				1DB67C861F74678F0046F9DE /* CMHandActions.h */,
+				1DB67C4E1F74674D0046F9DE /* CMAchievement.cpp */,
+				1DB67C6F1F7467500046F9DE /* CMAchievement.h */,
+				1DB67C6A1F74674F0046F9DE /* CMAction.cpp */,
+				1DB67C651F74674E0046F9DE /* CMAction.h */,
+				1DB67C501F74674D0046F9DE /* CMColour.cpp */,
+				1DB67C6B1F74674F0046F9DE /* CMColour.h */,
+				1DB67C601F74674E0046F9DE /* CMCommand.cpp */,
+				1DB67C541F74674D0046F9DE /* CMCommand.h */,
+				1DB67C681F74674F0046F9DE /* CMCue.h */,
+				1DB67C661F74674E0046F9DE /* CMDispatcher.h */,
+				1DB67C611F74674E0046F9DE /* CMGlobalEnums.h */,
+				1DB67C6D1F7467500046F9DE /* CMHand.cpp */,
+				1DB67C561F74674D0046F9DE /* CMHand.h */,
+				1DB67C671F74674F0046F9DE /* CMHandScore.cpp */,
+				1DB67C581F74674D0046F9DE /* CMHandScore.h */,
+				1DB67C621F74674E0046F9DE /* CMHandState.cpp */,
+				1DB67C4F1F74674D0046F9DE /* CMHandState.h */,
+				1DB67C5F1F74674E0046F9DE /* CMMatch.cpp */,
+				1DB67C631F74674E0046F9DE /* CMMatch.h */,
+				1DB67C701F7467500046F9DE /* CMMeld.cpp */,
+				1DB67C5C1F74674E0046F9DE /* CMMeld.h */,
+				1DB67C721F7467510046F9DE /* CMPlayer.cpp */,
+				1DB67C6C1F74674F0046F9DE /* CMPlayer.h */,
+				1DB67C711F7467500046F9DE /* CMPlayerAction.cpp */,
+				1DB67C731F7467510046F9DE /* CMPlayerAction.h */,
+				1DB67C511F74674D0046F9DE /* CMPlayerMode.cpp */,
+				1DB67C5A1F74674D0046F9DE /* CMPlayerMode.h */,
+				1DB67C591F74674D0046F9DE /* CMPlayerState.cpp */,
+				1DB67C641F74674E0046F9DE /* CMPlayerState.h */,
+				1DB67C5B1F74674D0046F9DE /* CMRuleBook.cpp */,
+				1DB67C5E1F74674E0046F9DE /* CMRuleBook.h */,
+				1DB67C691F74674F0046F9DE /* CMTile.cpp */,
+				1DB67C6E1F7467500046F9DE /* CMTile.h */,
+				1DB67C571F74674D0046F9DE /* CMTileConst.h */,
+				1DB67C551F74674D0046F9DE /* CMTileState.cpp */,
+				1DB67C531F74674D0046F9DE /* CMTileState.h */,
+				1DB67C5D1F74674E0046F9DE /* CMWall.cpp */,
+				1DB67C521F74674D0046F9DE /* CMWall.h */,
 				1D734B871F7466BA004A58B8 /* main.cpp */,
 			);
 			path = CMMahjongSpike;
@@ -120,6 +218,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				1D734B881F7466BA004A58B8 /* main.cpp in Sources */,
+				1DB67C741F7467510046F9DE /* CMAchievement.cpp in Sources */,
+				1DB67C781F7467510046F9DE /* CMPlayerState.cpp in Sources */,
+				1DB67C801F7467510046F9DE /* CMAction.cpp in Sources */,
+				1DB67C7C1F7467510046F9DE /* CMCommand.cpp in Sources */,
+				1DB67C7A1F7467510046F9DE /* CMWall.cpp in Sources */,
+				1DB67C771F7467510046F9DE /* CMTileState.cpp in Sources */,
+				1DB67C871F74678F0046F9DE /* CMHandActions.cpp in Sources */,
+				1DB67C7D1F7467510046F9DE /* CMHandState.cpp in Sources */,
+				1DB67C751F7467510046F9DE /* CMColour.cpp in Sources */,
+				1DB67C791F7467510046F9DE /* CMRuleBook.cpp in Sources */,
+				1DB67C7F1F7467510046F9DE /* CMTile.cpp in Sources */,
+				1DB67C7B1F7467510046F9DE /* CMMatch.cpp in Sources */,
+				1DB67C811F7467510046F9DE /* CMHand.cpp in Sources */,
+				1DB67C821F7467510046F9DE /* CMMeld.cpp in Sources */,
+				1DB67C841F7467510046F9DE /* CMPlayer.cpp in Sources */,
+				1DB67C761F7467510046F9DE /* CMPlayerMode.cpp in Sources */,
+				1DB67C7E1F7467510046F9DE /* CMHandScore.cpp in Sources */,
+				1DB67C831F7467510046F9DE /* CMPlayerAction.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
