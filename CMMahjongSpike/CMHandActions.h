@@ -18,107 +18,122 @@ class CMWall;
 using namespace std;
 
 class CMShowAction : public CMAction{
+
+private:
+    CMHand* hand_;
+
 public:
     CMShowAction(CMHand* hand);
     bool Do() const;
     bool Undo() const;
     string name() const;
 
-private:
-    CMHand* hand_;
 };
 
 class CMDiscardAction : public CMAction{
+
+private:
+    CMHand* hand_;
+    CMTile* discard_;
+
 public:
     CMDiscardAction(CMHand* hand);
     bool Do() const;
     bool Undo() const;
     string name() const;
     
-private:
-    CMHand* hand_;
-    CMTile* discard_;
 };
 
 class CMTakeAction : public CMAction{
+
+private:
+    CMHand* taker_;
+    CMHand* giver_;
+
 public:
     CMTakeAction(CMHand* giver, CMHand* taker);
     bool Do() const;
     bool Undo() const;
     string name() const;
-private:
-    CMHand* taker_;
-    CMHand* giver_;
 };
 
 class CMDrawAction : public CMAction{
+
+private:
+    CMHand* hand_;
+    CMWall* wall_;
+
 public:
     CMDrawAction(CMHand* hand);
     bool Do() const;
     bool Undo() const;
     string name() const;
+};
+
+class CMKeepAction : public CMAction{
 
 private:
     CMHand* hand_;
     CMWall* wall_;
-};
 
-class CMKeepAction : public CMAction{
 public:
     CMKeepAction(CMHand* hand);
     bool Do() const;
     bool Undo() const;
     string name() const;
-private:
-    CMHand* hand_;
-    CMWall* wall_;
 };
 
 class CMSortAction : public CMAction{
+
+private:
+    CMHand* hand_;
+    
 public:
     CMSortAction(CMHand* hand);
     bool Do() const;
     bool Undo() const;
     string name() const;
-private:
-    CMHand* hand_;
-    
 };
 
 class CMRobKongAction : public CMAction{
+
+private:
+    CMHand* giver_;
+    CMHand* taker_;
+    CMTile* kongTile_;
+
 public:
     CMRobKongAction(CMHand* taker, CMTile* tile);
     bool Do() const;
     bool Undo() const;
     string name() const;
-private:
-    CMHand* giver_;
-    CMHand* taker_;
-    CMTile* kongTile_;
 };
 
 class CMRemoveAction : public CMAction{
+    
+private:
+    CMHand* hand_;
+    unsigned int uid_;
+
 public:
     CMRemoveAction(CMHand* hand, CMTile* tile);
     bool Do() const;
     bool Undo() const;
     string name() const;
-    
-private:
-    CMHand* hand_;
-    unsigned int uid_;
 };
 
 class CMSelectAction : public CMAction{
+
+private:
+    CMHand* hand_;
+    CMTile* tile_;
+
 public:
     CMSelectAction(CMHand* hand, CMTile* tile);
     bool Do() const;
     bool Undo() const;
     string name() const;
     
-private:
-    CMHand* hand_;
-    CMTile* tile_;
 };
 
 

@@ -71,11 +71,6 @@ class CMTapKong : public CMCommand{
 
 class CMInputHandler{
 
-public:
-    CMInputHandler();
-    ~CMInputHandler();
-    CMCommand* handleInput(uint32_t command);
-
 private:
     unique_ptr<CMCommand> tapDiscard_;
     unique_ptr<CMCommand> tapWall_;
@@ -85,6 +80,11 @@ private:
     unique_ptr<CMCommand> tapChow_;
     unique_ptr<CMCommand> tapPung_;
     unique_ptr<CMCommand> tapKong_;
+
+public:
+    CMInputHandler();
+    ~CMInputHandler();
+    CMCommand* handleInput(uint32_t command);
 
 };
 #endif /* CMCommand_h */

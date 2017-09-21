@@ -67,7 +67,6 @@
 		1DB67C631F74674E0046F9DE /* CMMatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMMatch.h; sourceTree = "<group>"; };
 		1DB67C641F74674E0046F9DE /* CMPlayerState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMPlayerState.h; sourceTree = "<group>"; };
 		1DB67C651F74674E0046F9DE /* CMAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMAction.h; sourceTree = "<group>"; };
-		1DB67C661F74674E0046F9DE /* CMDispatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMDispatcher.h; sourceTree = "<group>"; };
 		1DB67C671F74674F0046F9DE /* CMHandScore.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CMHandScore.cpp; sourceTree = "<group>"; };
 		1DB67C681F74674F0046F9DE /* CMCue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMCue.h; sourceTree = "<group>"; };
 		1DB67C691F74674F0046F9DE /* CMTile.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CMTile.cpp; sourceTree = "<group>"; };
@@ -115,8 +114,6 @@
 		1D734B861F7466BA004A58B8 /* CMMahjongSpike */ = {
 			isa = PBXGroup;
 			children = (
-				1DB67C851F74678E0046F9DE /* CMHandActions.cpp */,
-				1DB67C861F74678F0046F9DE /* CMHandActions.h */,
 				1DB67C4E1F74674D0046F9DE /* CMAchievement.cpp */,
 				1DB67C6F1F7467500046F9DE /* CMAchievement.h */,
 				1DB67C6A1F74674F0046F9DE /* CMAction.cpp */,
@@ -126,7 +123,6 @@
 				1DB67C601F74674E0046F9DE /* CMCommand.cpp */,
 				1DB67C541F74674D0046F9DE /* CMCommand.h */,
 				1DB67C681F74674F0046F9DE /* CMCue.h */,
-				1DB67C661F74674E0046F9DE /* CMDispatcher.h */,
 				1DB67C611F74674E0046F9DE /* CMGlobalEnums.h */,
 				1DB67C6D1F7467500046F9DE /* CMHand.cpp */,
 				1DB67C561F74674D0046F9DE /* CMHand.h */,
@@ -134,6 +130,8 @@
 				1DB67C581F74674D0046F9DE /* CMHandScore.h */,
 				1DB67C621F74674E0046F9DE /* CMHandState.cpp */,
 				1DB67C4F1F74674D0046F9DE /* CMHandState.h */,
+				1DB67C851F74678E0046F9DE /* CMHandActions.cpp */,
+				1DB67C861F74678F0046F9DE /* CMHandActions.h */,
 				1DB67C5F1F74674E0046F9DE /* CMMatch.cpp */,
 				1DB67C631F74674E0046F9DE /* CMMatch.h */,
 				1DB67C701F7467500046F9DE /* CMMeld.cpp */,
