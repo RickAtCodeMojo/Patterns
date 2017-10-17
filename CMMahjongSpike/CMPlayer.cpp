@@ -1,6 +1,6 @@
 //
 //  CMPlayer.cpp
-//  CMDesignPatterns
+//  CMMahjongSpike
 //
 //  Created by Richard Dalley on 2017-09-04.
 //  Copyright © 2017 CodeMojo. All rights reserved.
@@ -9,7 +9,7 @@
 #include "CMPlayer.h"
 #include "CMAchievement.h"
 
-CMPlayer::CMPlayer(CMPlayerMode* breed, CMWind seatWind, CMWind prevailingWind, CMRuleBook* ruleBook, uint32_t playerID, uint32_t networkID) : mode_(breed) {
+CMPlayer::CMPlayer(CMPlayerMode* mode, CMWind seatWind, CMWind prevailingWind, CMRuleBook* ruleBook, uint32_t playerID, uint32_t networkID) : mode_(mode) {
     wall_ = &CMWall::getInstance();
     actions_ = &CMActions::getInstance();
     

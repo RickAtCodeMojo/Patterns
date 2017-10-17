@@ -1,6 +1,6 @@
 //
 //  CMPlayerMode.h
-//  CMDesignPatterns
+//  CMMahjongSpike
 //
 //  Created by Richard Dalley on 2017-09-05.
 //  Copyright © 2017 CodeMojo. All rights reserved.
@@ -22,7 +22,6 @@ class CMPlayerMode{
 public:
     virtual ~CMPlayerMode(){}
     virtual CMPlayer* newPlayer(CMWind seatWind, CMWind prevailingWind, CMRuleBook* ruleBook, uint32_t playerID, uint32_t networkID) = 0;
-private:
 };
 
 class CMNetworkPlayer : public CMPlayerMode{

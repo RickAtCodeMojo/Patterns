@@ -1,6 +1,6 @@
 //
 //  CMPlayer.h
-//  CMDesignPatterns
+//  CMMahjongSpike
 //
 //  Created by Richard Dalley on 2017-09-04.
 //  Copyright © 2017 CodeMojo. All rights reserved.
@@ -40,12 +40,13 @@ private:
     string imagePath_;
 
 public:
-    CMPlayer(CMPlayerMode* breed, CMWind seatWind, CMWind prevailingWind, CMRuleBook* ruleBook, uint32_t playerID, uint32_t networkID);
+    CMPlayer(CMPlayerMode* mode, CMWind seatWind, CMWind prevailingWind, CMRuleBook* ruleBook, uint32_t playerID, uint32_t networkID);
     ~CMPlayer();
+    
     unique_ptr<CMHand> hand;
     CMPlayer* next;
+    
     CMTile* autoDiscard();
-    void handleAction(CMPlayerAction action, CMTile* tile=nullptr, CMPlayer* other=nullptr);
     
     uint32_t playerID() const;
     uint32_t networkID() const;
@@ -56,7 +57,8 @@ public:
     void setPlayerID(const uint32_t playerID);
     void setNetworkID(const uint32_t networkID);
     void setColour(const CMColour colour);
-    
+    void handleAction(CMPlayerAction action, CMTile* tile=nullptr, CMPlayer* other=nullptr);
+
 };
 
 

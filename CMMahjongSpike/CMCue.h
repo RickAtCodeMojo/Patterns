@@ -1,6 +1,6 @@
 //
 //  CMCue.h
-//  CMDesignPatterns
+//  CMMahjongSpike
 //
 //  Created by Richard Dalley on 2017-09-07.
 //  Copyright © 2017 CodeMojo. All rights reserved.
@@ -70,8 +70,9 @@ public:
     // calls all connected functions
     void send(Args... p) {
         for(auto it : agents_) {
-            auto func = it.second;
-            func(p...);
+//            auto func = it.second;
+//            func(p...);
+            it.second(p...);
         }
     }
     

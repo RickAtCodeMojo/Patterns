@@ -1,6 +1,6 @@
 //
 //  CMHandScore.hpp
-//  CMDesignPatterns
+//  CMMahjongSpike
 //
 //  Created by Richard Dalley on 2017-09-03.
 //  Copyright © 2017 CodeMojo. All rights reserved.
@@ -19,31 +19,8 @@
 using namespace std;
 
 class CMHandScore{
-    
-public:
-    
-    CMHandScore(rawTile_it begin,
-                CMWind prevailingWind,
-                CMWind seatWind,
-                CMTile* lastTile,
-                CMWall* wall,
-                CMRuleBook* ruleBook);
-    ~CMHandScore();
-    
-    bool addedMeld(CMMeld& meld) ;
-    
-    bool canMahjong();
-    bool tileIsInAMeld(CMTile* tile) ;
-    
-    size_t score();
-
-    void assess();
-    void pop();
-    void clear();
-    void show();
 
 private:
-    
     bool canMahjong_;
     bool selfDrawn_;
     CMWind prevailingWind_;
@@ -65,13 +42,33 @@ private:
     tile_itr end_;
     
     //functions
-    
-    unsigned int getPointsFromFan(unsigned int fan);
     bool tilesAreInAnotherMeld(CMMeld& meld);
     bool tilesMatch(CMTile* first, CMTile* second);
-    
+    unsigned int getPointsFromFan(unsigned int fan);
     unsigned int minValue(CMMeld* meld, unsigned int currentMinValue);
     unsigned int maxValue(CMMeld* meld, unsigned int currentMaxValue);
+
+public:
+    
+    CMHandScore(rawTile_it begin,
+                CMWind prevailingWind,
+                CMWind seatWind,
+                CMTile* lastTile,
+                CMWall* wall,
+                CMRuleBook* ruleBook);
+    ~CMHandScore();
+    
+    bool addedMeld(CMMeld& meld) ;
+    bool canMahjong();
+    bool tileIsInAMeld(CMTile* tile) ;
+    
+    size_t score();
+
+    void assess();
+    void pop();
+    void clear();
+    void show();
+
     
 };
 

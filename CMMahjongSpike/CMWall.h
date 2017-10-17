@@ -1,6 +1,6 @@
 //
 //  CMWall.hpp
-//  CMDesignPatterns
+//  CMMahjongSpike
 //
 //  Created by Richard Dalley on 2017-09-03.
 //  Copyright © 2017 CodeMojo. All rights reserved.
@@ -19,33 +19,37 @@ using tiles_t =  vector<unique_ptr<CMTile> >;
 using tile_itr = tiles_t::iterator;
 
 class CMWall final{
+private:
 
     CMWall();
     ~CMWall();
-
+    
+    tiles_t wall_;
+    tile_itr next_;
+    CMTile* drawn_;
+    
 public:
     static CMWall& getInstance();
+
+    CMTile* draw();
+    CMTile* tileFromID(uint32_t tileID);
+    
+    tile_itr next();
+
+    size_t countOf(CMTileIdentifier& tileIndex);
+    size_t size();
+    size_t remaining();
+    
+    bool empty();
+    
     void build();
     void shuffle();
     void clear();
-
-    size_t countOf(CMTileIdentifier& tileIndex);
-    CMTile* draw();
-    CMTile* tileFromID(uint32_t tileID);
-    tile_itr next();
-    size_t size();
-    size_t remaining();
-    bool empty();
+    
     CMWall(const CMWall&) = delete;
     CMWall& operator=(const CMWall&) = delete;
     CMWall(CMWall&&) = delete;
     CMWall& operator=(CMWall&&) = delete;
-
-private:
-    tiles_t wall_;
-    tile_itr next_;
-    CMTile* drawn_;
-
 };
 
 #endif /* CMWall_hpp */

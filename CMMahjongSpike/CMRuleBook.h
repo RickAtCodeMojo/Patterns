@@ -1,6 +1,6 @@
 //
 //  CMRuleBook.h
-//  CMDesignPatterns
+//  CMMahjongSpike
 //
 //  Created by Richard Dalley on 2017-09-02.
 //  Copyright © 2017 CodeMojo. All rights reserved.
@@ -14,12 +14,15 @@
 #include <vector>
 #include <memory>
 #include "CMMeld.h"
+
 using melds_t =  std::vector<CMMeld>;
 using melds_itr =  melds_t::iterator;
 using achievements_t =  std::vector<std::string> ;
 using achievements_itr = achievements_t::iterator;
 
 using namespace std;
+
+
 class CMRuleBook {
 public:
     virtual ~CMRuleBook(){}

@@ -1,6 +1,6 @@
 //
 //  CMHand.hpp
-//  CMDesignPatterns
+//  CMMahjongSpike
 //
 //  Created by Richard Dalley on 2017-09-03.
 //  Copyright © 2017 CodeMojo. All rights reserved.
@@ -27,6 +27,43 @@ class CMInTurnState;
 class CMWaitingMahjong;
 
 class CMHand {
+
+    friend class CMHandState;
+    friend class CMBuildHandState;
+    friend class CMWaitingTurnState;
+    friend class CMInTurnState;
+    friend class CMWaitingMahjong;
+    friend class CMStartGameState;
+    
+
+private:
+    CMActions* actions_;
+    CMHandState* state_;
+    CMRuleBook* ruleBook_;
+    CMWind seatWind_;
+    CMWind _prevailingWind;
+    CMHandScore* _score;
+    
+    
+    melds_t melds_;
+    melds_t kongs_;
+    melds_t pungs_;
+    melds_t chows_;
+    
+    bool evaluate(CMTile* matchingTile);
+    void evaluateMelds(rawTile_it& begin);
+    bool match(CMTile* first, CMTile* second);
+    bool lastMeld( rawTile_it& itr );
+    
+    void robKong(CMTile* tile);
+    void selectMeld(CMMeld* meld, bool concealed=false);
+    void setConcealedKong(CMMeld* kong) ;
+    void findMelds(CMTile* matchingTile);
+    
+    rawTile_it firstFree(rawTile_it begin, CMMeld& chow);
+    rawTile_it nextInSequence(rawTile_it itr);
+    
+    vector<unsigned int> uids_;
     
 public:
     
@@ -68,42 +105,6 @@ public:
     rawTiles_t flowers;
     rawTiles_t seasons;
 
-    
-private:
-    CMActions* actions_;
-    CMHandState* state_;
-    CMRuleBook* ruleBook_;
-    CMWind seatWind_;
-    CMWind _prevailingWind;
-    CMHandScore* _score;
-    
-    
-    melds_t melds_;
-    melds_t kongs_;
-    melds_t pungs_;
-    melds_t chows_;
-    
-    bool evaluate(CMTile* matchingTile);
-    void evaluateMelds(rawTile_it& begin);
-    bool match(CMTile* first, CMTile* second);
-    bool lastMeld( rawTile_it& itr );
-    
-    void robKong(CMTile* tile);
-    void selectMeld(CMMeld* meld, bool concealed=false);
-    void setConcealedKong(CMMeld* kong) ;
-    void findMelds(CMTile* matchingTile);
-    
-    rawTile_it firstFree(rawTile_it begin, CMMeld& chow);
-    rawTile_it nextInSequence(rawTile_it itr);
-    
-    vector<unsigned int> uids_;
-    
-    friend class CMHandState;
-    friend class CMBuildHandState;
-    friend class CMWaitingTurnState;
-    friend class CMInTurnState;
-    friend class CMWaitingMahjong;
-    friend class CMStartGameState;
     
 };
 

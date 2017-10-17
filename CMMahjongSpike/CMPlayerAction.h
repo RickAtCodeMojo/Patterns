@@ -1,6 +1,6 @@
 //
 //  CMPlayerAction.h
-//  CMDesignPatterns
+//  CMMahjongSpike
 //
 //  Created by Richard Dalley on 2017-09-05.
 //  Copyright © 2017 CodeMojo. All rights reserved.
@@ -15,15 +15,16 @@ class CMPlayer;
 
 class CMSelectDiscardAction : public CMAction{
 
+private:
+    CMPlayer* player_;
+    CMTile* tile_;
+
 public:
     CMSelectDiscardAction(CMPlayer* player, CMTile* tile);
     bool Do() const;
     bool Undo() const;
     string name() const;
     
-private:
-    CMPlayer* player_;
-    CMTile* tile_;
 };
 
 #endif /* CMPlayerAction_h */
